@@ -6,4 +6,4 @@ fb_dtsg = 'AQEEIMgB2iZF:AQE9c9WWhGuI' # Insert the fb_dtsg parameter obtained fr
 # Instantiate the recog class
 recog = FBRecog(access_token, cookie, fb_dtsg)
 # Recog class can be used multiple times with different paths
-print(recog.recognize(path))
+print(str(recog.recognize(path)[0]['name']))
